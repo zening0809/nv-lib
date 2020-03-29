@@ -21,6 +21,7 @@
     "eslint": "^5.0.0",
     "execa": "^4.0.0",
     "jest": "^25.1.0",
+    "lint-staged": "^10.0.9",
     "nv-log": "^1.0.3",
     "rollup": "^1.19.4",
     "rollup-plugin-alias": "^2.0.0",
@@ -39,5 +40,9 @@
     "test": "jest",
     "test-c": "jest --coverage",
     "watch": "npm run build && tsc -w"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
   }
 }
