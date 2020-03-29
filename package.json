@@ -44,15 +44,5 @@
   "gitHooks": {
     "pre-commit": "eslint --fix . && git add .",
     "commit-msg": "node scripts/verifyCommit.js"
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write",
-      "git add"
-    ]
   }
 }
