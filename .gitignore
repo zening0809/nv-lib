@@ -1,0 +1,6 @@
+types/*.js
+node_modules
+coverage
+.vscode
+dist
+
