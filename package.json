@@ -52,7 +52,7 @@
     "commit-msg": "node scripts/verifyCommit.js"
   },
   "lint-staged": {
-    "*.ts": [
+    "*.{ts, tsx}": [
       "eslint --fix",
       "git add"
     ]
