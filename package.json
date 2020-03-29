@@ -20,7 +20,6 @@
     "chalk": "^3.0.0",
     "eslint": "^5.0.0",
     "execa": "^4.0.0",
-    "git-hooks": "^1.1.10",
     "jest": "^25.1.0",
     "nv-log": "^1.0.3",
     "prettier": "~1.14.0",
@@ -32,7 +31,7 @@
     "rollup-plugin-typescript2": "^0.24.0",
     "ts-jest": "^25.2.1",
     "ts-node": "^8.6.2",
-    "typescript": "^3.8.3",
+    "typescript": "^3.6.0",
     "zlib": "^1.0.5"
   },
   "scripts": {
@@ -43,7 +42,7 @@
     "watch": "npm run build && tsc -w"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged",
+    "pre-commit": "eslint --fix . && git add .",
     "commit-msg": "node scripts/verifyCommit.js"
   },
   "lint-staged": {

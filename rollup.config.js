@@ -5,7 +5,7 @@ import alias from 'rollup-plugin-alias'
 import json from 'rollup-plugin-json'
 
 const packageDir = path.resolve()
-const name = 'zn-lib'
+const name = 'nv-lib'
 const resolve = p => path.resolve(packageDir, p)
 const pkg = require(resolve(`package.json`))
 const packageOptions = pkg.buildOptions || {}
