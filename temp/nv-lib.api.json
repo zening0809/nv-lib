@@ -26,7 +26,16 @@
             },
             {
               "kind": "Content",
-              "text": "{\n    isArrayLike: typeof import(\"./typeJudge/isArrayLike\")."
+              "text": "{\n    toString: typeof import(\"./typeTransform/toString\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~toString"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isArrayLike: typeof import(\"./typeJudge/isArrayLike\")."
             },
             {
               "kind": "Reference",
@@ -53,6 +62,87 @@
             },
             {
               "kind": "Content",
+              "text": ";\n    isNull: typeof import(\"./typeJudge/isNull\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isNull"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isNumber: typeof import(\"./typeJudge/isNumber\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isNumber"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isObject: typeof import(\"./typeJudge/isObject\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isObject"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isObjectLike: typeof import(\"./typeJudge/isObjectLike\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isObjectLike"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isString: typeof import(\"./typeJudge/isString\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isString"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isSymbol: typeof import(\"./typeJudge/isSymbol\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isSymbol"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    stringRevert: typeof import(\"./stringLib/stringRevert\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~stringRevert"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    string2Group: typeof import(\"./stringLib/string2Group\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~string2Group"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    numberComma: typeof import(\"./numbersLib/numberComma\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~numberComma"
+            },
+            {
+              "kind": "Content",
               "text": ";\n}"
             }
           ],
@@ -60,7 +150,7 @@
           "name": "_nv",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 8
+            "endIndex": 28
           }
         }
       ]

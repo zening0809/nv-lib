@@ -6,9 +6,19 @@
 
 // @public (undocumented)
 const _nv: {
+    toString: typeof import("./typeTransform/toString").default;
     isArrayLike: typeof import("./typeJudge/isArrayLike").default;
     isBoolean: typeof import("./typeJudge/isBoolean").default;
     isLength: typeof import("./typeJudge/isLength").default;
+    isNull: typeof import("./typeJudge/isNull").default;
+    isNumber: typeof import("./typeJudge/isNumber").default;
+    isObject: typeof import("./typeJudge/isObject").default;
+    isObjectLike: typeof import("./typeJudge/isObjectLike").default;
+    isString: typeof import("./typeJudge/isString").default;
+    isSymbol: typeof import("./typeJudge/isSymbol").default;
+    stringRevert: typeof import("./stringLib/stringRevert").default;
+    string2Group: typeof import("./stringLib/string2Group").default;
+    numberComma: typeof import("./numbersLib/numberComma").default;
 };
 
 export default _nv;
