@@ -1,7 +1,13 @@
 // Invoked on the commit-msg git hook by yorkie.
 
 const chalk = require('chalk')
+const path = require('path')
 const msgPath = process.env.GIT_PARAMS
+const pkgDir = path.resolve()
+const pkg = require(`${pkgDir}/package.json`)
+const log = require('nv-log').log
+const logger = log({name: pkg.name})
+
 const msg = require('fs')
   .readFileSync(msgPath, 'utf-8')
   .trim()
@@ -9,8 +15,7 @@ const msg = require('fs')
 const commitRE = /^(revert: )?(feat|fix|docs|dx|style|refactor|perf|test|workflow|build|ci|chore|types|wip)(\(.+\))?: .{1,50}/
 
 if (!commitRE.test(msg)) {
-  console.log()
-  console.error(
+  logger.error(
     `  ${chalk.bgRed.white(' ERROR ')} ${chalk.red(
       `invalid commit message format.`
     )}\n\n` +
