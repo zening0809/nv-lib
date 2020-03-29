@@ -1,2 +1,7 @@
 scripts/*
+coverage/*
+node_modules
+scripts
+dist
 rollup.config.js
+jest.config.js
