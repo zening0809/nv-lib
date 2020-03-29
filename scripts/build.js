@@ -14,7 +14,7 @@ const devOnly = args.devOnly || args.d
 const prodOnly = !devOnly && (args.prodOnly || args.p)
 const buildTypes = args.t || args.types || true
 const logger = log({name: pkg.name})
-
+const commit = execa.sync('git', ['rev-parse', 'HEAD']).stdout.slice(0, 7)
 run()
 
 async function run() {
@@ -37,7 +37,7 @@ async function build(target) {
         '-c',
         '--environment',
         [
-          `COMMIT:${''}`,
+          `COMMIT:${commit}`,
           `NODE_ENV:${env}`,
           `TARGET:${target}`,
           formats ? `FORMATS:${formats}` : ``,

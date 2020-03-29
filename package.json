@@ -51,6 +51,11 @@
     "pre-commit": "lint-staged",
     "commit-msg": "node scripts/verifyCommit.js"
   },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix"
+    ]
+  },
   "engines": {
     "node": "^10.16.3"
   }

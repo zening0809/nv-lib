@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.7.12",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "nv-lib!",
+  "docComment": "",
+  "name": "nv-lib",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "nv-lib!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "nv-lib!_nv:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "_nv: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    isArrayLike: typeof import(\"./typeJudge/isArrayLike\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isArrayLike"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isBoolean: typeof import(\"./typeJudge/isBoolean\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isBoolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isLength: typeof import(\"./typeJudge/isLength\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isLength"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "_nv",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        }
+      ]
+    }
+  ]
+}
