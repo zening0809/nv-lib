@@ -84,7 +84,9 @@ async function build(target) {
         )
       } else {
         logger.error(
+          // @ts-ignore
           `API Extractor completed with ${extractorResult.errorCount} errors` +
+            // @ts-ignore
             ` and ${extractorResult.warningCount} warnings`
         )
         process.exitCode = 1

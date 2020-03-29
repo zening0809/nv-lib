@@ -1,5 +1,5 @@
-scripts/*
-coverage/*
+scripts
+coverage
 node_modules
 scripts
 dist
