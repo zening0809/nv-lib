@@ -5,3 +5,4 @@ scripts
 dist
 rollup.config.js
 jest.config.js
+utils.ts
