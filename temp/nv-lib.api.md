@@ -9,11 +9,17 @@ const _nv: {
     toString: typeof import("./typeTransform/toString").default;
     isArrayLike: typeof import("./typeJudge/isArrayLike").default;
     isBoolean: typeof import("./typeJudge/isBoolean").default;
+    isElement: typeof import("./typeJudge/isElement").default;
+    isFunction: typeof import("./typeJudge/isFunction").default;
+    isDate: (value: any) => boolean;
     isLength: typeof import("./typeJudge/isLength").default;
     isNull: typeof import("./typeJudge/isNull").default;
     isNumber: typeof import("./typeJudge/isNumber").default;
     isObject: typeof import("./typeJudge/isObject").default;
     isObjectLike: typeof import("./typeJudge/isObjectLike").default;
+    isPlainObject: typeof import("./typeJudge/isPlainObject").default;
+    isRegExp: (value: any) => boolean;
+    isSet: (value: any) => boolean;
     isString: typeof import("./typeJudge/isString").default;
     isSymbol: typeof import("./typeJudge/isSymbol").default;
     stringRevert: typeof import("./stringLib/stringRevert").default;

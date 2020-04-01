@@ -53,7 +53,25 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    isLength: typeof import(\"./typeJudge/isLength\")."
+              "text": ";\n    isElement: typeof import(\"./typeJudge/isElement\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isElement"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isFunction: typeof import(\"./typeJudge/isFunction\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isFunction"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isDate: (value: any) => boolean;\n    isLength: typeof import(\"./typeJudge/isLength\")."
             },
             {
               "kind": "Reference",
@@ -98,7 +116,16 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    isString: typeof import(\"./typeJudge/isString\")."
+              "text": ";\n    isPlainObject: typeof import(\"./typeJudge/isPlainObject\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isPlainObject"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    isRegExp: (value: any) => boolean;\n    isSet: (value: any) => boolean;\n    isString: typeof import(\"./typeJudge/isString\")."
             },
             {
               "kind": "Reference",
@@ -150,7 +177,7 @@
           "name": "_nv",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 28
+            "endIndex": 34
           }
         }
       ]
