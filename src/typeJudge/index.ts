@@ -1,11 +1,18 @@
 import isArrayLike from './isArrayLike'
 import isBoolean from './isBoolean'
+import isDate from './isDate'
+import isElement from './isElement'
+import isFunction from './isFunction'
 import isLength from './isLength'
+import isMap from './isMap'
 import isNull from './isNull'
 import isNumber from './isNumber'
 import isObject from './isObject'
 import isObjectLike from './isObjectLike'
+import isPlainObject from './isPlainObject'
+import isRegExp from './isRegExp'
+import isSet from './isSet'
 import isString from './isString'
 import isSymbol from './isSymbol'
 
-export default { isArrayLike, isBoolean, isLength, isNull, isNumber, isObject, isObjectLike, isString, isSymbol }
+export default { isArrayLike, isBoolean, isDate, isElement, isFunction, isLength, isMap, isNull, isNumber, isObject, isObjectLike, isPlainObject, isRegExp, isSet, isString, isSymbol }
