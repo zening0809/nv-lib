@@ -35,6 +35,24 @@
             },
             {
               "kind": "Content",
+              "text": ";\n    asciiToArray: typeof import(\"./typeTransform/asciiToArray\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~asciiToArray"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    unicodeToArray: typeof import(\"./typeTransform/unicodeToArray\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~unicodeToArray"
+            },
+            {
+              "kind": "Content",
               "text": ";\n    isArrayLike: typeof import(\"./typeJudge/isArrayLike\")."
             },
             {
@@ -161,7 +179,16 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    numberComma: typeof import(\"./numbersLib/numberComma\")."
+              "text": ";\n    upperFirst: any;\n    words: typeof import(\"./stringLib/words\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~words"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    camelCase: (string: string) => string;\n    capitalize: (string: string) => string;\n    upperCase: (string: string) => string;\n    numberComma: typeof import(\"./numbersLib/numberComma\")."
             },
             {
               "kind": "Reference",
@@ -177,7 +204,7 @@
           "name": "_nv",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 34
+            "endIndex": 40
           }
         }
       ]

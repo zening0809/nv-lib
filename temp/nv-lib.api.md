@@ -7,6 +7,8 @@
 // @public (undocumented)
 const _nv: {
     toString: typeof import("./typeTransform/toString").default;
+    asciiToArray: typeof import("./typeTransform/asciiToArray").default;
+    unicodeToArray: typeof import("./typeTransform/unicodeToArray").default;
     isArrayLike: typeof import("./typeJudge/isArrayLike").default;
     isBoolean: typeof import("./typeJudge/isBoolean").default;
     isElement: typeof import("./typeJudge/isElement").default;
@@ -24,6 +26,11 @@ const _nv: {
     isSymbol: typeof import("./typeJudge/isSymbol").default;
     stringRevert: typeof import("./stringLib/stringRevert").default;
     string2Group: typeof import("./stringLib/string2Group").default;
+    upperFirst: any;
+    words: typeof import("./stringLib/words").default;
+    camelCase: (string: string) => string;
+    capitalize: (string: string) => string;
+    upperCase: (string: string) => string;
     numberComma: typeof import("./numbersLib/numberComma").default;
 };
 

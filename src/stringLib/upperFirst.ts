@@ -1,19 +1,21 @@
-import words from './words'
-import toString from '../typeTransform/toString'
+import createCaseFirst from '../internal/createCaseFirst'
 
 /**
- * Converts `string`, as space separated words, to upper case.
+ * Converts the first character of `string` to upper case.
  *
+ * @since 4.0.0
  * @category String
  * @param {string} [string=''] The string to convert.
- * @returns {string} Returns the upper cased string.
- * @see camelCase, kebabCase, lowerCase, snakeCase, startCase, upperFirst
+ * @returns {string} Returns the converted string.
+ * @see camelCase, kebabCase, lowerCase, snakeCase, startCase, upperCase
+ * @example
  *
+ * upperFirst('fred')
+ * // => 'Fred'
+ *
+ * upperFirst('FRED')
+ * // => 'FRED'
  */
-const upperCase = (string: string): string => (
-  words(toString(string).replace(/['\u2019]/g, '')).reduce((result: string | number, word: string, index: any) => (
-    result + (index ? ' ' : '') + word.toUpperCase()
-  ), '')
-)
+const upperFirst = createCaseFirst('toUpperCase')
 
-export default upperCase
+export default upperFirst
