@@ -161,6 +161,87 @@
             },
             {
               "kind": "Content",
+              "text": ";\n    camelCase: (string: string) => string;\n    capitalize: (string: string) => string;\n    endWidth: typeof import(\"./stringLib/endWidth\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~endsWith"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    escape: typeof import(\"./stringLib/escape\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~escape"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    kebabCase: (string: string) => string;\n    lowerCase: (string: string) => string;\n    pad: typeof import(\"./stringLib/pad\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~pad"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    padEnd: typeof import(\"./stringLib/padEnd\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~padEnd"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    padStart: typeof import(\"./stringLib/padStart\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~padStart"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    repeat: typeof import(\"./stringLib/repeat\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~repeat"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    replace: typeof import(\"./stringLib/replace\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~replace"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    snakeCase: (string: string) => string;\n    split: typeof import(\"./stringLib/split\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~split"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    startCase: (string: string) => string;\n    string2Group: typeof import(\"./stringLib/string2Group\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~string2Group"
+            },
+            {
+              "kind": "Content",
               "text": ";\n    stringRevert: typeof import(\"./stringLib/stringRevert\")."
             },
             {
@@ -170,16 +251,43 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    string2Group: typeof import(\"./stringLib/string2Group\")."
+              "text": ";\n    trim: typeof import(\"./stringLib/trim\")."
             },
             {
               "kind": "Reference",
               "text": "default",
-              "canonicalReference": "nv-lib!~string2Group"
+              "canonicalReference": "nv-lib!~trim"
             },
             {
               "kind": "Content",
-              "text": ";\n    upperFirst: any;\n    words: typeof import(\"./stringLib/words\")."
+              "text": ";\n    trimEnd: typeof import(\"./stringLib/trimEnd\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~trimEnd"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    trimStart: typeof import(\"./stringLib/trimStart\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~trimStart"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    truncate: typeof import(\"./stringLib/truncate\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~truncate"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    lowerFirst: any;\n    upperFirst: any;\n    words: typeof import(\"./stringLib/words\")."
             },
             {
               "kind": "Reference",
@@ -188,7 +296,7 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    camelCase: (string: string) => string;\n    capitalize: (string: string) => string;\n    upperCase: (string: string) => string;\n    numberComma: typeof import(\"./numbersLib/numberComma\")."
+              "text": ";\n    upperCase: (string: string) => string;\n    numberComma: typeof import(\"./numbersLib/numberComma\")."
             },
             {
               "kind": "Reference",
@@ -204,7 +312,7 @@
           "name": "_nv",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 40
+            "endIndex": 64
           }
         }
       ]
