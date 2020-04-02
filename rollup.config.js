@@ -63,8 +63,6 @@ function createConfig(output, plugins = []) {
     const isGlobalBuild = /\.global(\.prod)?\.js$/.test(output.file)
     const isBundlerESMBuild = /\.esm-bundler\.js$/.test(output.file)
     const isBrowserESMBuild = /esm-browser(\.prod)?\.js$/.test(output.file)
-    const isRuntimeCompileBuild = /vue\./.test(output.file)
-  
     if (isGlobalBuild) {
       output.name = packageOptions.name
     }
@@ -101,6 +99,7 @@ function createConfig(output, plugins = []) {
       external: isGlobalBuild || isBrowserESMBuild ? [] : externals,
       plugins: [
         json({
+          // @ts-ignore
           namedExports: false
         }),
         tsPlugin,
@@ -130,12 +129,14 @@ function createReplacePlugin(
     return replace({
       __COMMIT__: `"${process.env.COMMIT}"`,
       __VERSION__: `"${pkg.version}"`,
+      // @ts-ignore
       __DEV__: isBundlerESMBuild
         ? // preserve to be handled by bundlers
           `(process.env.NODE_ENV !== 'production')`
         : // hard coded dev/prod builds
           !isProduction,
       // this is only used during tests
+      // @ts-ignore
       __TEST__: isBundlerESMBuild ? `(process.env.NODE_ENV === 'test')` : false,
       // If the build is expected to run directly in the browser (global / esm-browser builds)
       __BROWSER__: isBrowserBuild
