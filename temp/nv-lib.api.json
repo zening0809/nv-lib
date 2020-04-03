@@ -305,6 +305,87 @@
             },
             {
               "kind": "Content",
+              "text": ";\n    dateFormat: typeof import(\"./dateLib/dateFormat\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~format"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    dateRange: typeof import(\"./dateLib/dateRange\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~dateRange"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    getDay: typeof import(\"./dateLib/getDay\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~getDay"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    getTNum: typeof import(\"./dateLib/getTNum\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~getTNum"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    now: typeof import(\"./dateLib/now\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~now"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    every: typeof import(\"./arrayLib/every\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~every"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    filter: typeof import(\"./arrayLib/filter\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~filter"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    map: typeof import(\"./arrayLib/map\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~map"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    slice: typeof import(\"./arrayLib/slice\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~slice"
+            },
+            {
+              "kind": "Content",
               "text": ";\n}"
             }
           ],
@@ -312,7 +393,7 @@
           "name": "_nv",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 64
+            "endIndex": 82
           }
         }
       ]

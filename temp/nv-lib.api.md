@@ -49,6 +49,15 @@ const _nv: {
     words: typeof import("./stringLib/words").default;
     upperCase: (string: string) => string;
     numberComma: typeof import("./numbersLib/numberComma").default;
+    dateFormat: typeof import("./dateLib/dateFormat").default;
+    dateRange: typeof import("./dateLib/dateRange").default;
+    getDay: typeof import("./dateLib/getDay").default;
+    getTNum: typeof import("./dateLib/getTNum").default;
+    now: typeof import("./dateLib/now").default;
+    every: typeof import("./arrayLib/every").default;
+    filter: typeof import("./arrayLib/filter").default;
+    map: typeof import("./arrayLib/map").default;
+    slice: typeof import("./arrayLib/slice").default;
 };
 
 export default _nv;
