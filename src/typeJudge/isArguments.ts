@@ -1,35 +1,22 @@
-import baseIsArguments from '../internal/baseIsArguments';
-import isObjectLike from './isObjectLike';
-
-/** Used for built-in method references. */
-const objectProto = Object.prototype;
-
-/** Used to check objects for own properties. */
-const hasOwnProperty = objectProto.hasOwnProperty;
-
-/** Built-in value references. */
-const propertyIsEnumerable = objectProto.propertyIsEnumerable;
+import getTag from '../internal/getTag'
+import isObjectLike from './isObjectLike'
 
 /**
  * Checks if `value` is likely an `arguments` object.
  *
- * @static
- * @memberOf _
- * @since 0.1.0
  * @category Lang
  * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an `arguments` object,
- *  else `false`.
- * @example
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object, else `false`.
  *
- * _.isArguments(function() { return arguments; }());
+ * isArguments(function() { return arguments }())
  * // => true
  *
- * _.isArguments([1, 2, 3]);
+ * isArguments([1, 2, 3])
  * // => false
  */
-const isArguments = baseIsArguments(function(...params): any { return params; }()) ? baseIsArguments : function(value: any): boolean {
-  return isObjectLike(value) && hasOwnProperty.call(value, 'callee') && !propertyIsEnumerable.call(value, 'callee');
-};
 
-export default isArguments;
+function isArguments(value: any): boolean {
+  return isObjectLike(value) && getTag(value) == '[object Arguments]'
+}
+
+export default isArguments

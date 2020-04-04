@@ -53,6 +53,15 @@
             },
             {
               "kind": "Content",
+              "text": ";\n    isArguments: typeof import(\"./typeJudge/isArguments\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~isArguments"
+            },
+            {
+              "kind": "Content",
               "text": ";\n    isArrayLike: typeof import(\"./typeJudge/isArrayLike\")."
             },
             {
@@ -233,7 +242,16 @@
             },
             {
               "kind": "Content",
-              "text": ";\n    startCase: (string: string) => string;\n    string2Group: typeof import(\"./stringLib/string2Group\")."
+              "text": ";\n    startCase: (string: string) => string;\n    startsWith: typeof import(\"./stringLib/startsWith\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~startsWith"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    string2Group: typeof import(\"./stringLib/string2Group\")."
             },
             {
               "kind": "Reference",
@@ -305,6 +323,105 @@
             },
             {
               "kind": "Content",
+              "text": ";\n    add: typeof import(\"./mathLib/add\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!default"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    ceil: typeof import(\"./mathLib/ceil\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~ceil"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    divide: typeof import(\"./mathLib/divide\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!default"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    floor: typeof import(\"./mathLib/floor\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~floor"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    max: typeof import(\"./mathLib/max\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~max"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    mean: typeof import(\"./mathLib/mean\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~mean"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    min: typeof import(\"./mathLib/min\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~min"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    multiply: typeof import(\"./mathLib/multiply\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!default"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    round: typeof import(\"./mathLib/round\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!default"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    subtract: typeof import(\"./mathLib/subtract\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!default"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    sum: typeof import(\"./mathLib/sum\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~sumBy"
+            },
+            {
+              "kind": "Content",
               "text": ";\n    dateFormat: typeof import(\"./dateLib/dateFormat\")."
             },
             {
@@ -347,6 +464,15 @@
               "kind": "Reference",
               "text": "default",
               "canonicalReference": "nv-lib!~now"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    concat: typeof import(\"./arrayLib/concat\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "default",
+              "canonicalReference": "nv-lib!~concat"
             },
             {
               "kind": "Content",
@@ -393,7 +519,7 @@
           "name": "_nv",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 82
+            "endIndex": 110
           }
         }
       ]

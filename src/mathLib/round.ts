@@ -45,6 +45,7 @@ export enum RoundingModes {
 }
 /**
  * 
+ * @category Math
  * @param input the number to round
  * @param n precision
  * @param mode Rounding Mode

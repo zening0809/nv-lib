@@ -1,6 +1,6 @@
 /**
  *
- * @math
+ * @category Math
  * @param {string} number1
  * @param {string} number2
  * @returns {string}

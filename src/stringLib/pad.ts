@@ -24,5 +24,5 @@ function pad(string: string, length: number, chars?: string): string {
     createPadding(Math.ceil(mid), chars)
   )
 }
-console.log(pad('abc', 8, '_-'))
+
 export default pad

@@ -3,7 +3,7 @@ import round from './round';
 
 /**
  *
- * @math
+ * @category Math
  * @param {*} dividend
  * @param {(string | number | string[])} divisor
  * @param {number} [precission=8]

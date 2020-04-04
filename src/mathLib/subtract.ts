@@ -1,5 +1,13 @@
 import add from './add';
 
+/**
+ *
+ * @category Math
+ * @param {(number | string)} number1
+ * @param {(number | string)} [number2='0']
+ * @returns {string}
+ * 
+ */
 export default function subtract(number1: number | string, number2: number | string = '0'): string {
 	number1 = number1.toString();
 	number2 = number2.toString();

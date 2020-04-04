@@ -1,8 +1,7 @@
 import toString from '../typeTransform/toString'
 /**
  *
- * @Math
- * @export
+ * @category Math
  * @param {*} number1
  * @param {string} [number2='0']
  * @returns {string}

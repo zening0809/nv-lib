@@ -4,7 +4,7 @@ import toString from '../typeTransform/toString'
 
 /**
  *
- * @math
+ * @category Math
  * @param {string} value
  * @returns {string}
  * 
