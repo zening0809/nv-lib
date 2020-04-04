@@ -40,6 +40,7 @@ export default {
     snakeCase, 
     split, 
     startCase,
+    startsWith,
     string2Group, 
     stringRevert, 
     trim,
