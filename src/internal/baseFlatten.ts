@@ -12,6 +12,7 @@ import isFlattenable from './isFlattenable';
  * @param {Array} [result=[]] The initial result value.
  * @returns {Array} Returns the new flattened array.
  */
+
 function baseFlatten(array: any[], depth: number, predicate?: Function, isStrict?: boolean, result?: any[]): any[] {
   let index = -1;
   const length = array.length;

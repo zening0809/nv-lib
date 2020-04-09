@@ -8,10 +8,21 @@ const arrayProto = Array.prototype,
     numberProto = Number.prototype,
     stringProto = String.prototype
 
+/** Used to provide empty values to methods. */
+const empties = [[], {}].concat(falsey.slice(1))
+
 const noop = function(): any {},
-      slice = arrayProto.slice
+      slice = arrayProto.slice,
+      identity = function(value: any): any { return value }, 
+      stubTrue = function(): boolean { return true },
+      stubFalse = function(): boolean { return false }
+      
 export {
     falsey,
     noop,
-    slice
+    slice,
+    identity,
+    stubFalse,
+    stubTrue,
+    empties
 }
