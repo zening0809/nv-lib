@@ -1,7 +1,9 @@
 import baseFlatten from '../internal/baseFlatten'
 import baseUniq from '../internal/baseUniq'
 import isArrayLikeObject from '../typeJudge/isArrayLikeObject'
+import isObject from '../typeJudge/isObject'
 import last from './last'
+import { isString } from 'util'
 
 /**
  * This method is like `union` except that it accepts `iteratee` which is
@@ -18,13 +20,25 @@ import last from './last'
  *
  */
 
-function unionBy(...arrays: any[]): any[] {
-  let iteratee = last(arrays)
-  if (isArrayLikeObject(iteratee)) {
-    iteratee = undefined
-  }
-  return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), iteratee)
+function unionBy (...arrays: any[]): any[] {
+    let iteratee = last(arrays)
+    if(isString(iteratee)) {
+        return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), function(item: any) {
+            if(isObject(item)){
+                const keys = Object.keys(item)
+                const values = Object.values(item)
+                let str = ''
+                keys.map((subItem, index) => {
+                    str += subItem + values[index]
+                })
+                return str
+            }
+        })
+    }
+    if (isArrayLikeObject(iteratee)) {
+        iteratee = undefined
+    }
+    return baseUniq(baseFlatten(arrays, 1, isArrayLikeObject, true), iteratee)
 }
-
-
 export default unionBy
+
