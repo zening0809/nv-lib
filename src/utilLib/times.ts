@@ -20,7 +20,8 @@ const MAX_ARRAY_LENGTH = 4294967295
  *  times(4, () => 0)
  * // => [0, 0, 0, 0]
  */
-function times(n?: number, iteratee?: Function): any[] {
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+function times(n?: number, iteratee = (index: any): any => index): any[] {
   if (!n || n < 1 || n > MAX_SAFE_INTEGER) {
     return []
   }
